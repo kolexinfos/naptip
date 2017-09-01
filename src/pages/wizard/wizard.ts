@@ -28,7 +28,7 @@ export class WizardPage {
 
     this.slides = [
       {
-        title: '',
+        title: 'Emergency Services',
         description: 'WELCOME TO THE WORLD OF ENTERPRISE DESIGN',
         image: 'img/logo.png',
       },
