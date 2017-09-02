@@ -6,6 +6,7 @@
     <!--<ion-buttons end *ngIf="showSkip">
       <button (click)="startApp()" color="custom">Skip</button>
     </ion-buttons>-->
+    <ion-title>NAPTIP</ion-title>
     <ion-buttons end>
         <button ion-button icon-only (click)="startApp()">
             <ion-icon name="skip-forward"></ion-icon>
@@ -27,7 +28,7 @@
     <ion-slide>
       <!--<img src="img/logo.png" class="slide-image"/>-->
       <!--<h2 class="slide-title">Continue?</h2>-->
-      <button large clear (click)="startApp()">
+      <button large (click)="startApp()">
         Continue
         <ion-icon name="arrow-forward"></ion-icon>
       </button>

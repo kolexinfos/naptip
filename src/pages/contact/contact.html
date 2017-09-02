@@ -1,17 +1,47 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Login
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <ion-grid>
+  <ion-row wrap padding>
+    <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+      <button ion-button button-clear clear (click)="onEvent('onSkip')"></button>
+      <!---Logo-->
+      <ion-thumbnail>
+        <img [src]="">
+      </ion-thumbnail>
+      <!---Input field username-->
+      <ion-item no-padding color="dark">
+        <ion-label color="secondary" floating></ion-label>
+        <ion-input placeholder="Username" required type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <!---Input field password-->
+      <ion-item no-padding color="dark">
+        <ion-label color="secondary" floating></ion-label>
+        <ion-input placeholder="Password" required type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <!---Login button-->
+      <button ion-button right clear button-clear (click)="onRegister()">Register</button>
+      <!---Register button-->
+      <button ion-button right clear button-clear (click)="onLogin()">Login</button>
+    </ion-col>
+    <!---Share Section-->
+    <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 social>
+      <!---Facebook button-->
+      <button ion-button color="facebook" (click)="onLogin()">Facebook</button>
+      <!---Twitter button-->
+      <button ion-button color="twitter" (click)="onLogin()">Twitter</button>
+      <!---Google button-->
+      <button ion-button color="google" (click)="onLogin()">Google</button>
+      <!---Pinterest button-->
+      <!--<button ion-button color="pinterest" (click)="onLogin()">Pinterest</button>-->
+    </ion-col><!---End Share Section-->
+  </ion-row>
+  </ion-grid>
+
 </ion-content>

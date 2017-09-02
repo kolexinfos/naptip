@@ -1,11 +1,90 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Register
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-grid>
+  <ion-row wrap padding>
+    <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+      <!--Logo-->
+      <div class="logo">
+        <ion-thumbnail>
+        <img [src]="" >
+        </ion-thumbnail>
+      </div><!--End logo-->
+      <!--Form-->
+      <div class="form">
+        <ion-item no-padding color="dark">
+          <!--Icon for username-->
+          <ion-icon item-left>
+            <i icon-small class="icon icon-account"></i>
+          </ion-icon>
+          <!---Input field username-->
+          <ion-label floating></ion-label>
+          <ion-input placeholder="Full Name" required type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item no-padding color="dark">
+          <!--Icon for username-->
+          <ion-icon item-left>
+            <i icon-small class="icon icon-account"></i>
+          </ion-icon>
+          <!---Input field username-->
+          <ion-label floating></ion-label>
+          <ion-input placeholder="Preferred Username" required type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item no-padding color="dark">
+          <!--Icon for username-->
+          <ion-icon item-left>
+            <i icon-small class="icon icon-account"></i>
+          </ion-icon>
+          <!---Input field username-->
+          <ion-label floating></ion-label>
+          <ion-input placeholder="Address" required type="text" [(ngModel)]="city"></ion-input>
+        </ion-item>
+        <ion-item no-padding color="dark">
+          <!--Icon for password-->
+          <ion-icon item-left>
+            <i icon-small class="icon icon-lock"></i>
+          </ion-icon>
+          <!---Input field password-->
+          <ion-label floating></ion-label>
+          <ion-input placeholder="Password" required type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-item no-padding color="dark">
+          <!--Icon for email-->
+          <ion-icon item-left>
+            <i icon-small class="icon icon-email-outline"></i>
+          </ion-icon>
+          <!---Input field email-->
+          <ion-label floating></ion-label>
+          <ion-input placeholder="Email" required type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item no-padding color="dark">
+          <!--Icon for country-->
+          <ion-icon item-left>
+            <i icon-small class="icon icon-phone"></i>
+          </ion-icon>
+          <!---Input field country-->
+          <ion-label floating></ion-label>
+          <ion-input placeholder="Phone Number" required type="text" [(ngModel)]="phone"></ion-input>
+        </ion-item>
+        <ion-item no-padding color="dark">
+          <!--Icon for city-->
+          <ion-icon item-left>
+            <i icon-small class="icon icon-web"></i>
+          </ion-icon>
+          <!---Input field city-->
+          <ion-label floating></ion-label>
+          <ion-input placeholder="City" required type="text" [(ngModel)]="city"></ion-input>
+        </ion-item>
+        <!---Register button-->
+        <button ion-button right clear button-clear (click)="onRegister()">Register</button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>

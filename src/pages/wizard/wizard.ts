@@ -4,6 +4,7 @@ import { MenuController, NavController, Platform, LoadingController } from 'ioni
 
 import { HomePage } from '../home/home';
 import { TabsPage } from '../tabs/tabs';
+import { ContactPage } from '../contact/contact';
 
 
 interface Slide {
@@ -28,18 +29,18 @@ export class WizardPage {
 
     this.slides = [
       {
-        title: 'Emergency Services',
-        description: 'WELCOME TO THE WORLD OF ENTERPRISE DESIGN',
+        title: 'NAPTIP',
+        description: 'Welcome to the emergency management system of the Federal Republic of Nigeria. A system that is designed to serve as an anti-kidnap and  emergency rescus utility',
         image: 'img/logo.png',
       },
       {
-        title: '<b>Junglenomics</b>',
-        description: 'WELCOME TO THE WORLD OF ENTERPRISE DESIGN',
+        title: '<b>NAPTIP</b>',
+        description: 'Welcome to the emergency management system of the Federal Republic of Nigeria. A system that is designed to serve as an anti-kidnap and  emergency rescus utility',
         image: 'img/logo.png',
       },
       {
-        title: '<b>Junglenomics</b>',
-        description: 'WELCOME TO THE WORLD OF ENTERPRISE DESIGN',
+        title: '<b>NAPTIP</b>',
+        description: 'Welcome to the emergency management system of the Federal Republic of Nigeria. A system that is designed to serve as an anti-kidnap and  emergency rescus utility',
         image: 'img/logo.png'
       }
     ];
@@ -64,7 +65,7 @@ export class WizardPage {
   }
   startApp() {
 
-    this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.setRoot(ContactPage);
   }
 
   onSlideChangeStart(slider) {
