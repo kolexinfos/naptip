@@ -31,17 +31,17 @@ export class WizardPage {
       {
         title: 'NAPTIP',
         description: 'Welcome to the emergency management system of the Federal Republic of Nigeria. A system that is designed to serve as an anti-kidnap and  emergency rescus utility',
-        image: 'img/logo.png',
+        image: 'assets/images/download.png',
       },
       {
         title: '<b>NAPTIP</b>',
         description: 'Welcome to the emergency management system of the Federal Republic of Nigeria. A system that is designed to serve as an anti-kidnap and  emergency rescus utility',
-        image: 'img/logo.png',
+        image: 'assets/images/download.png',
       },
       {
         title: '<b>NAPTIP</b>',
         description: 'Welcome to the emergency management system of the Federal Republic of Nigeria. A system that is designed to serve as an anti-kidnap and  emergency rescus utility',
-        image: 'img/logo.png'
+        image: 'assets/images/download.png'
       }
     ];
 

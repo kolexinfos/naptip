@@ -7,6 +7,10 @@
 </ion-header>
 
 <ion-content padding>
+
+  <p ion-text color="accent" >
+  The Agency is the Federal Government of Nigeria’s response to addressing the scourge of trafficking in persons. It is a fulfillment of the country’s international obligation under the Trafficking in Persons Protocol to prevent, suppress and punish trafficking in persons, especially women and children, supplementing the United Nations Transnational Organized Crime Convention (UNTOC).
+</p>
   <ion-grid>
   <ion-row wrap padding>
     <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
@@ -81,10 +85,15 @@
           <ion-label floating></ion-label>
           <ion-input placeholder="City" required type="text" [(ngModel)]="city"></ion-input>
         </ion-item>
+        
         <!---Register button-->
         <button ion-button right clear button-clear (click)="onRegister()">Register</button>
+
+        <!---Take Photo button-->
+        <button ion-button right clear button-clear (click)="onPhoto()">Take Photo</button>
       </div>
     </ion-col>
   </ion-row>
 </ion-grid>
+
 </ion-content>

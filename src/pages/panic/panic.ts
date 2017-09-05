@@ -11,4 +11,8 @@ export class PanicPage {
 
   }
 
+  onAction(){
+    console.log("Fired");
+  }
+
 }

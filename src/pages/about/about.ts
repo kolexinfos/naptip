@@ -17,4 +17,8 @@ export class AboutPage {
     this.navCtrl.setRoot(TabsPage);
   }
 
+   onPhoto(){
+    this.navCtrl.setRoot(TabsPage);
+  }
+
 }

@@ -1,6 +1,6 @@
 {
   "name": "naptip",
-  "app_id": "",
+  "app_id": "e4e6ac0a",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
