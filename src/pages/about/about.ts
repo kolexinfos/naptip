@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { TabsPage } from '../tabs/tabs';
+import { WelcomePage } from '../welcome/welcome';
 
 @Component({
   selector: 'page-about',
@@ -14,11 +15,11 @@ export class AboutPage {
   }
 
   onRegister(){
-    this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.setRoot(WelcomePage);
   }
 
    onPhoto(){
-    this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.setRoot(WelcomePage);
   }
 
 }

@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { WelcomePage } from '../pages/welcome/welcome';
 import { PanicPage } from '../pages/panic/panic';
 import { ChatPage } from '../pages/chat/chat';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -27,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActivityPage,
     HazardPage,
     ChatPage,
-    PanicPage
+    PanicPage,
+    WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActivityPage,
     HazardPage,
     ChatPage,
-    PanicPage
+    PanicPage,
+    WelcomePage
   ],
   providers: [
     StatusBar,

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { AboutPage } from '../about/about';
+import { WelcomePage } from '../welcome/welcome';
 import { TabsPage } from '../tabs/tabs';
 
 @Component({
@@ -15,7 +16,7 @@ export class ContactPage {
   }
 
   onLogin(){
-    this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.setRoot(WelcomePage);
   }
 
   onRegister(){

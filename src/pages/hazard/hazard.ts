@@ -11,4 +11,8 @@ export class HazardPage {
 
   }
 
+  onLogin(){
+    
+  }
+
 }

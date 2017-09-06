@@ -1,17 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Hazard Activity</ion-title>
+    <ion-title>Tell a Friend</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2 item-title>Welcome to Hazard Activity Page!</h2>
-  <p color="secondary" item-subtitle>
-    Welcome to Suspicious Activity Page
-    that are going to be primarily.
-  </p>
-  <p color="secondary" item-subtitle>
-    Take a look at the <code>tutorial</code> page to understand the app navigation,
-    update any existing page or create new pages.
-  </p> 
+  <ion-grid>
+  <ion-row wrap padding>
+    <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+      
+      <!---Input field username-->
+      <ion-item no-padding color="dark">
+        <ion-label color="secondary" floating></ion-label>
+        <ion-textarea placeholder="Enter a message" required type="text" [(ngModel)]="username"></ion-textarea>
+      </ion-item>
+      
+      
+    </ion-col>
+    <!---Share Section-->
+    <ion-col col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 social>
+      <!---Facebook button-->
+      <button ion-button color="facebook" (click)="onLogin()">Share on Facebook</button>
+      <!---Twitter button-->
+      <button ion-button color="twitter" (click)="onLogin()">Share on Twitter</button>
+      <!---Google button-->
+      <button ion-button color="google" (click)="onLogin()">Share on Google</button>
+      <!---Pinterest button-->
+      <button ion-button color="pinterest" (click)="onLogin()">Share on Instagram</button>
+      <!---Yahoo button-->
+      <button ion-button color="facebook" (click)="onLogin()">Share on Yahoo</button>
+
+    </ion-col><!---End Share Section-->
+  </ion-row>
+  </ion-grid>
 </ion-content>
