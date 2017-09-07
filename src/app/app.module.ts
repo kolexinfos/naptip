@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { TrackPage } from '../pages/track/track';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { PanicPage } from '../pages/panic/panic';
 import { ChatPage } from '../pages/chat/chat';
@@ -16,6 +19,7 @@ import { WizardPage } from '../pages/wizard/wizard';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 
 @NgModule({
   declarations: [
@@ -29,10 +33,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HazardPage,
     ChatPage,
     PanicPage,
-    WelcomePage
+    WelcomePage,
+    TrackPage,
+    
   ],
   imports: [
     BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyATMVto_eL_PmIE-xS0Dtsd_uaV4SXDtlY'
+    }),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -47,7 +56,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HazardPage,
     ChatPage,
     PanicPage,
-    WelcomePage
+    WelcomePage,
+    TrackPage
   ],
   providers: [
     StatusBar,
